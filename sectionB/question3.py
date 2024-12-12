@@ -1,21 +1,51 @@
-#2(i)
-student_name=input("Enter the student's name: ")
-student_number=input("Enter the student number: ")
-programming=input("Enter the marks for programming: ")
-data_science=input("Enter the marks for data science: ")
-computer_applications=input("Enter the marks for computer applications: ")
-total_marks = (programming+data_science+computer_applications)
-number_of_subjects = 3
-average_mark = (total_marks/number_of_subjects)
-print(f"The average mark is: {average_mark: .3f}")
-print(f"The student details are: {student_name}, {student_number},{programming}, {data_science}, {computer_applications} and the average is: {average_mark}")
 
-#2(ii)
-miles_driven=float(input("Enter the number of miles driven: "))
-gallons_of_gas_used=float(input("Enter the number of gallons used: "))
-MPG=miles_driven/gallons_of_gas_used
-print(MPG)
-
-#2(iii)
 
      
+#3(iii)
+marks_scored=float(input("Enter the student score in the subject (0-100):"))
+#Validate the marks within a plausible range(0-100)
+if 0 <= marks_scored <=100:
+    if marks_scored >=90:
+        grade="A"
+        print("Grade", grade)
+    elif marks_scored >=80:
+        grade="B"
+        print("Grade",grade)
+    elif marks_scored >=70:
+        grade="C"
+        print("Grade",grade)
+    elif marks_scored >=60:
+        grade="D"
+        print("Grade",grade)
+    elif marks_scored >=50:
+        grade="E"
+        print("Grade",grade)
+    else:
+        grade="F"
+        print("Grade",grade)
+
+#3(v)
+marks_scored=float(input("Enter the student score in the subject (0-100):"))
+#Validate the marks within a plausible range(0-100)
+if 0 <= marks_scored <=100:
+    if marks_scored >=90:
+        grade="A"
+        print("grade",grade)
+        print("Exellent")
+    elif marks_scored >=80:
+        grade="B"
+        print("grade",grade)
+        print("Exellent")
+    elif marks_scored >=70:
+        grade="C"
+        print("Grade",grade)
+        print("good")
+    elif marks_scored >=60:
+        grade="D"
+        print("Grade",grade)
+        print("satisfactory")
+
+    else:
+        grade="F"
+        print("Needs imporovement")
+
